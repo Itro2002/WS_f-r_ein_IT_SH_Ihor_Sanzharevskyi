@@ -1,0 +1,98 @@
+/* Entfernt Abstände */
+* {
+ margin:0;
+ padding:0;
+}
+/* Entfernt fest alle Daten aus der Tabelle */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hauptüberschrift */
+#Header {
+ width: 100%;
+  max-width: 1000px;
+  min-height: 60px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid silver;
+  background: #ccc;
+  margin: 0 auto;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+/* Textbereich */
+ #Main {
+   width:100%;
+   max-width: 1000px;
+   margin:0 auto;
+   text-align: center;
+ background: #ccc;
+ }
+ /* Tabelle */
+ table {
+ width:100%;
+ max-width: 1000px;
+   margin:0 auto;
+   text-align: center;
+ }
+/* Textstil, Größe und Schriftart */
+ .Textfürwebapp .HeadText {
+  font:14px , "Times New Roman";
+  margin: 10px auto;
+  padding: 10px;
+}
+/* Text im Kopfbereich */
+.HeadText {
+ white-space: pre-line;
+  text-indent: 1em;
+  line-height: 1.5;
+}
+/* Eingabefelder-Container */
+.FormContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width:100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+ }
+
+/* Schaltfläche zum Senden der Daten */
+#Send {
+   display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+/* Für Eingabefelder – anpassbar an kleinere Bildschirme */
+@media (max-width: 768px) {
+  .FormContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+/* Eingabefelder mit <p>-Tag */
+.FormContainer p {
+  width: 100%;
+  margin: 0;
+}
+
+/* Alles für die Anpassung an kleinere Bildschirme */
+  table, #Main, #Header, #Send {
+    width: 100%;
+    max-width: 100%;
+  }
+/* Eingabefelder */
+  input, select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
