@@ -1,18 +1,25 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+from PyInstaller.utils.hooks import collect_submodules
+hiddenimports = collect_submodules("Base")
+
+datas = [
+    ("Base/Frontend/Static", "Base/Frontend/Static"),
+    ("Base/Frontend/Templates", "Base/Frontend/Templates"),
+]
 
 a = Analysis(
-    ['run_app.py'],
+     ['run_app.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=datas,
+    hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
     noarchive=False,
-    optimize=0,
+    optimize=0
 )
 pyz = PYZ(a.pure)
 

@@ -13,7 +13,7 @@ Source: "Base\*"; DestDir: "{app}\Base"; Flags: recursesubdirs ignoreversion
 
 [Icons]
 Name: "{group}\Server- und Konsolenstart"; Filename: "{app}\run_app.exe"
-Name: "{commondesktop}\FastAPI Console"; Filename: "{app}\run_app.exe"; Tasks: desktopicon
+Name: "{commondesktop}\WS_für_ein_IT_SH_Ihor_Sanzharevskyi"; Filename: "{app}\run_app.exe"; Tasks: desktopicon
 
 [Tasks]
 Name: "desktopicon"; Description: "Erstellen Sie eine Verknüpfung auf dem Desktop"; GroupDescription: "Zusätzlich:"

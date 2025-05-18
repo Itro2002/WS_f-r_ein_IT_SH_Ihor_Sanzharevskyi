@@ -4,6 +4,7 @@ import threading
 import time
 import code
 import socket
+from Base.main import app
 
 def get_local_ip():
     # Ruft die IP des lokalen Hosts ab (z. B. 192.168.x.x)
@@ -19,7 +20,7 @@ def get_local_ip():
     return IP
 
 def start_server():
-    uvicorn.run("Base.main:app", host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 if __name__ == "__main__":
     local_ip = get_local_ip()
