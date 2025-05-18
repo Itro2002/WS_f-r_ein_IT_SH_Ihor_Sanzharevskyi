@@ -8,7 +8,7 @@ Setup_WS_for_an_IT_SH_Ihor_Sanzharevskyi.zip. Führen Sie anschließend
 
 die Datei Installer.exe aus, um die Anwendung zu installieren. Nach der
 
-Installation finden Sie die ausführbare Datei run_app.exe im
+Installation finden Sie die ausführbare Datei WS_für_ein_IT_SH_Ihor_Sanzharevskyi.exe im
 
 Installationsverzeichnis oder, falls Sie „Verknüpfung auf dem Desktop
 
