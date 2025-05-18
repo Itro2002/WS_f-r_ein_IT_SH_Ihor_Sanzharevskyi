@@ -1,11 +1,22 @@
 import sqlite3
 from pathlib import Path
-
+import sys
 # Initialisierung der Datenbank
-DB_PATH = Path("report.db")
+
+if getattr(sys, 'frozen', False):
+    # PyInstaller
+    base_path = Path(sys._MEIPASS)
+else:
+    # Python
+    base_path = Path(__file__).parent
+
+DB_PATH = base_path / "report.db"
+
+
 
 # Erstellung der Tabelle
 def init_db():
+    connection = None
     try:
         connection = sqlite3.connect(DB_PATH)
         cursor = connection.cursor()
