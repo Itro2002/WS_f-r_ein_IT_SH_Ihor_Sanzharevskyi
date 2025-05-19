@@ -14,7 +14,7 @@
  <h1 id="Header"> Webbasierter Störungserfasser Für IT-Störunger</h1>
 <!-- Erklärungstext zur Funktionsweise der Anwendung. Warum so viele <p>? Zur besseren Lesbarkeit des Textes. -->
  <div id="Main">
-     <ul class="Textfürwebapp  HeadText">
+     <div class="Textfürwebapp  HeadText">
          <p> Bitte tragen Sie im Formular die folgenden Informationen ein: </p>
          <p>Titel der Störung: Geben Sie hier eine kurze Überschrift der Störung ein (z.B. „Drucker funktioniert nicht“).</p>
          <p>Beschreibung: Beschreiben Sie die Störung möglichst genau (z.B. „Der Drucker im Büro 3A reagiert nicht, obwohl er eingeschaltet ist“).</p>
@@ -25,7 +25,7 @@
          <p>Wenn Sie bestätigen, wird die Meldung in die untenstehende Tabelle eingetragen.</p>
          <p>  Am Ende sehen Sie eine Übersichtstabelle mit früheren Störungsmeldungen. </p>
          <p>Bitte prüfen Sie vor dem Absenden, ob Ihr Problem bereits gemeldet wurde, um doppelte Einträge zu vermeiden. </p>
-     </ul>
+     </div>
          <!-- Eingabebereich für die Daten, die oben im Text beschrieben wurden -->
  <div class="FormContainer">
 
@@ -33,8 +33,8 @@
     <input type="text" name="titlederstörung" id="titlederstörungInput">
   </p>
   <p>Beschreibung<br>
-    <input type="text" name="beschreibung" id="beschreibungInput">
-  </p>
+  <textarea name="beschreibung" id="beschreibungInput" rows="4"></textarea>
+</p>
   <p>Name das Meldenden<br>
         <!-- Hier können aufgrund des JavaScript-Skripts nur Buchstaben und Leerzeichen eingegeben werden -->
     <input type="text"  name="namedasmeldenden" id="namedasmeldendenInput" >
@@ -56,21 +56,21 @@
 
     <!-- Datentabelle, die automatisch aktualisiert wird, wenn neue Einträge hinzugefügt werden. (Python) Bei Löschung wird empfohlen, die Seite neu zu laden. -->
 
+     <div class="table-wrapper">
      <table class= "Textfürwebapp" border="1">
         <caption class= "Textfürwebapp" >Table Für IT-Störunger </caption>
-     <tr>
-         <th> Title der Störung </th>
-         <th> Beschreibung </th>
-         <th> Name das Meldenden </th>
-         <th> Kategorie </th>
-     </tr>
-     <tr>
-      <td>...</td>
-         <td>...</td>
-          <td>...</td>
-          <td>...</td>
-     </tr>
-</table>
+    <thead>
+                <tr>
+                    <th>Title der Störung</th>
+                    <th>Beschreibung</th>
+                    <th>Name das Meldenden</th>
+                    <th>Kategorie</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+     </div>
      </div>
  </body>
 </html>

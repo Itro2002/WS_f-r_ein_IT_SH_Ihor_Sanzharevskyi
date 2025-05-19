@@ -65,29 +65,26 @@ const input = document.getElementById('namedasmeldendenInput');
 // Funktion, die die Datenbankdaten in die HTML-Tabelle lädt und in der Konsole anzeigt
 function loadReports() {
     fetch("/get_reports")
-    // Empfängt die Daten vom Server (Python)
         .then(response => response.json())
-        // Übergibt die Daten an table data
         .then(data => {
-            const table = document.querySelector("table");
-// Entfernt alle vorhandenen Datenzeilen aus der HTML-Tabelle
-            table.querySelectorAll("tr:not(:first-child)").forEach(row => row.remove());
-// Fügt neu Datenzeilen in die HTML-Tabelle
+            const tableBody = document.querySelector(".table-wrapper table tbody");
+            if (!tableBody) {
+                console.error("Element tbody Keine Habe!");
+                return;
+            }
+            tableBody.innerHTML = '';
+
             data.forEach(entry => {
-                const row = table.insertRow();
-                row.innerHTML = `
-                    <td>${entry.titlederst0rung}</td>
-                    <td>${entry.beschreibung}</td>
-                    <td>${entry.namedasmeldenden}</td>
-                    <td>${entry.kategorie}</td>
-                `;
-                // Zeigt die Einträge beim Einfügen in der Konsole an
-                console.log(`ID: ${entry.id}, Titel: ${entry.titlederst0rung}, Beschreibung: ${entry.beschreibung}, Name: ${entry.namedasmeldenden}, Kategorie: ${entry.kategorie}`);
+                const row = tableBody.insertRow();
+
+
+                row.insertCell().textContent = entry.titlederst0rung || '';
+                row.insertCell().textContent = entry.beschreibung || '';
+                row.insertCell().textContent = entry.namedasmeldenden || '';
+                row.insertCell().textContent = entry.kategorie || '';
             });
-// Gibt alle Daten in der Konsole aus, wenn Funktion direkt aufgerufen wird
-            console.log("Gesamttabelle:", data);
+             console.log("Gesamttabelle geladen:", data);
         })
-        // Gibt eine Fehlermeldung in der Konsole aus, falls etwas schiefläuft
         .catch(error => {
             console.error("Fehler beim Abrufen der Daten:", error);
         });
