@@ -79,11 +79,12 @@ Datenbankeinträge tabellarisch anzuzeigen. Die Webanwendung ist jederzeit
 
 einfach das Konsolenfenster oder beenden die Anwendung direkt.
 
-Technologies used: Python (FastAPI), SQLite, HTML/CSS, JavaScript, Bootstrap
-
 Die größten Herausforderungen lagen eher beim Erstellen der Installationsdatei bzw. beim Erstellen der Tabelle selbst und beim Aktivieren aller Szenarien wie z. B. das Aktivieren des Datenübertragungsprogramms
 
 usw. Dies nahm am meisten Zeit in Anspruch.
+
+Technologien:
+  Python (FastAPI), SQLite, HTML/CSS, JavaScript, Bootstrap
 
 Projektstruktur
 
