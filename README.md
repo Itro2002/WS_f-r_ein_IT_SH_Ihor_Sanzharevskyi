@@ -41,7 +41,7 @@ Erstelle eine einfache Webanwendung zur Störungserfassung mit folgenden Funktio
     Einfache Fehlerbehandlung (z. B. „Feld darf nicht leer sein“)
     
     (Optional) Eingabefeld für Priorität (hoch/mittel/niedrig)
- 
+
 
 Entpacken Sie die Datei
 
@@ -78,3 +78,24 @@ Datenbankeinträge tabellarisch anzuzeigen. Die Webanwendung ist jederzeit
 über http://{local_ip}:8000 erreichbar, wobei {local_ip}} Ihre lokale IPAdresse ist, z. B. 127.0.0.1 oder 192.168.X.X. Zum Beenden schließen Sie
 
 einfach das Konsolenfenster oder beenden die Anwendung direkt.
+
+Technologies used: Python (FastAPI), SQLite, HTML/CSS, JavaScript, Bootstrap
+
+Die größten Herausforderungen lagen eher beim Erstellen der Installationsdatei bzw. beim Erstellen der Tabelle selbst und beim Aktivieren aller Szenarien wie z. B. das Aktivieren des Datenübertragungsprogramms
+
+usw. Dies nahm am meisten Zeit in Anspruch.
+
+<img width="610" height="362" alt="image" src="https://github.com/user-attachments/assets/e07739d3-4b37-4345-8b4a-f58534140c72" />
+
+<img width="1898" height="741" alt="image" src="https://github.com/user-attachments/assets/2d4e5cb3-9116-4516-b408-e3cdc4023abc" />
+
+<img width="1897" height="871" alt="image" src="https://github.com/user-attachments/assets/b65e64a1-62f4-4a87-ad40-672a4ce90ac4" />
+
+<img width="1096" height="626" alt="image" src="https://github.com/user-attachments/assets/c427ef08-3ad3-4400-b8e9-e6900595eaa9" />
+
+<img width="1245" height="452" alt="image" src="https://github.com/user-attachments/assets/beceaf5e-8988-401a-8e6f-c71f78631cd5" />
+
+
+
+
+
