@@ -1,6 +1,47 @@
 # WS_f-r_ein_IT_SH_Ihor_Sanzharevskyi
+Meine Project für Test Arbeit. Aufgabe "Webbasierter Störungserfasser für ein IT-Systemhaus"
 
-Meine Project für Test Arbeit. Aufgabe "Webbasierter Störungserfasser für ein IT-Systemhaus".
+Szenario:
+
+Ein interner Mitarbeiter bei ccnet möchte eine einfache Webanwendung, um kleinere IT-Störungen im Unternehmen zu melden – z. B. „Drucker geht nicht“, „Outlook startet nicht“, „VPN bricht ab“. Diese Informationen 
+
+sollen gesammelt und angezeigt werden.
+
+Aufgabenstellung:
+
+Erstelle eine einfache Webanwendung zur Störungserfassung mit folgenden Funktionen:
+ 
+  Frontend:
+  
+    Formular zur Eingabe einer neuen Störung mit folgenden Feldern:
+    
+      Titel der Störung
+      
+      Beschreibung
+      
+      Name des Meldenden
+      
+      Kategorie (Drucker, Software, Netzwerk, Sonstiges)
+    
+    Übersicht der bisher gemeldeten Störungen als Liste/Tabelle
+  
+  Backend (z. B. in PHP oder Python/Flask):
+    
+    Verarbeitung der Formulardaten (Speicherung lokal in einer Datei oder in einer SQLite/MySQL-Datenbank)
+    
+    Abrufen und Anzeigen aller gemeldeten Störungen
+    
+    (Optional) Möglichkeit zum „Löschen“ einzelner Einträge
+  Anforderungen:
+    
+    Klar strukturierter und kommentierter Code
+    
+    Responsive Gestaltung (z. B. mit Bootstrap)
+    
+    Einfache Fehlerbehandlung (z. B. „Feld darf nicht leer sein“)
+    
+    (Optional) Eingabefeld für Priorität (hoch/mittel/niedrig)
+ 
 
 Entpacken Sie die Datei
 
