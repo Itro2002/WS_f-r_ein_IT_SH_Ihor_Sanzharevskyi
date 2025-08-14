@@ -103,6 +103,16 @@ Der Feedback-Tabelle hinzufügen, dass etwas nicht stimmt.
 
 <img width="1245" height="452" alt="image" src="https://github.com/user-attachments/assets/beceaf5e-8988-401a-8e6f-c71f78631cd5" />
 
+Smartphone-Ansicht
+
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/ab661fe9-b468-4b40-8f4a-a74564d08589" />
+
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/4c00db37-9e97-4a3e-9b29-63f07348ae57" />
+
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/c32eca5a-7ee5-4db9-9e38-b4aa0f5d0429" />
+
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/2cd15786-ed6f-498f-bcd7-ce96415a595e" />
+
 1.	Wie ist Ihre Anwendung aufgebaut?
 Meine Anwendung besteht aus einem Frontend, einem Backend und einem Verbindungsteil, der mit FastAPI realisiert ist.  Frontend: HTML (Struktur), CSS (Design) und JavaScript (Interaktion mit dem Backend).  Backend: Python und SQLite übernehmen die Logik und Datenspeicherung.  FastAPI verbindet Frontend und Backend über HTTP-Schnittstellen. 
 2.	Warum haben Sie sich für FastAPI entschieden?
